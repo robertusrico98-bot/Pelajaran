@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BelajarKu - Website Pembelajaran SMP</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mathquill@0.10.1-a/build/mathquill.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" onclick="location.hash='#/'">
+    <span class="brand-logo">∑</span> BelajarKu
+  </div>
+  <nav class="topnav" id="topnav"></nav>
+  <div class="topright">
+    <span id="user-chip"></span>
+    <button id="btn-login" class="btn btn-sm btn-outline hidden">Login Guru</button>
+    <button id="btn-logout" class="btn btn-sm btn-outline hidden">Keluar</button>
+  </div>
+</header>
+
+<main id="app" class="container">
+  <div class="loading">Memuat…</div>
+</main>
+
+<footer class="footer">
+  <p>Website Pembelajaran — Materi · Contoh Soal · Soal · Trik Cepat</p>
+</footer>
+
+<!-- Modal popup umum (editor ink, gambar, chart, dll.) -->
+<div id="modal" class="modal-overlay hidden">
+  <div class="modal-box">
+    <div class="modal-head">
+      <span id="modal-title"></span>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div id="modal-body" class="modal-body"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathquill@0.10.1-a/build/mathquill.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
