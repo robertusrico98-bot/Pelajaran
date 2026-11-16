@@ -3,7 +3,7 @@
  * 2. Selama API_URL kosong, situs berjalan dalam MODE DEMO (data lokal).
  */
 
-const API_URL = ''; // contoh: 'https://script.google.com/macros/s/AKfyc.../exec'
+const API_URL = 'https://script.google.com/macros/s/AKfycbwuj9g_z1yYUzGesvQEL0Qh6Tb0L3_jFNufSrtxtoLu8k1YmobMCSn69LbsTFR9GmJ0/exec'; // contoh: 'https://script.google.com/macros/s/AKfyc.../exec'
 
 const Auth = {
   get guru() { try { return JSON.parse(sessionStorage.getItem('guru')); } catch (e) { return null; } },
